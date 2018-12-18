@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Template - Cozy Glow</title>
+
+    <!-- CSS -->
+    <link href="../assets/css/toolkit-startup.css" rel="stylesheet">
+    <link href="../assets/css/application-startup.css" rel="stylesheet">
+
+    <style>
+        /* This is a hack for iOS iframe for Bootstrap themes Shopify page */
+        /* This chunk of css is not part of the toolkit 🙂 */
+        @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+            body {
+                width: 1px;
+                min-width: 100%;
+                *width: 100%;
+            }
+
+            #stage {
+                height: 1px;
+                min-height: 100vh;
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+</head>
+<body class="navbar-fixed-top-margin">
+    <nav class="navbar navbar-global fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon icon-menu"></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <div class="navbar-collapse-fill-height">
+                    <ul class="navbar-nav nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Cozy Glow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../brand-guide/index.html">Brand Guide</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Template</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pattern/index.html">Pattern</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../docs/index.html">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript -->
+    <script src="../../node_modules/lodash/lodash.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../../node_modules/chroma-js/chroma.min.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script>
+        // Execute / clear Bootstrap loaders for documentation
+        $(function() {
+            while (window.BS && window.BS.loader && window.BS.loader.length) {
+                (window.BS.loader.pop())()
+            }
+        })
+    </script>
+</body>
+</html>

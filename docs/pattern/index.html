@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Triganlify - Cozy Glow</title>
+
+    <!-- CSS -->
+    <link href="../assets/css/toolkit-startup.css" rel="stylesheet">
+    <link href="../assets/css/application-startup.css" rel="stylesheet">
+
+    <style>
+        /* This is a hack for iOS iframe for Bootstrap themes Shopify page */
+        /* This chunk of css is not part of the toolkit 🙂 */
+        @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+            body {
+                width: 1px;
+                min-width: 100%;
+                *width: 100%;
+            }
+
+            #stage {
+                height: 1px;
+                min-height: 100vh;
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-global fixed-top navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon icon-menu"></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <div class="navbar-collapse-fill-height">
+                    <ul class="navbar-nav nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Cozy Glow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../brand-guide/index.html">Brand Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../template/index.html">Template</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Pattern</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../docs/index.html">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid screen-full navbar-fixed-top-margin">
+        <div class="row h-100">
+            <div class="col-sm-3 pt-3 pb-3 overflow-scroll">
+                <h1>Pattern</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="width">Width</label>
+                            <input type="text" id="width" class="form-control" placeholder="Width" value="1440">
+                        </div>
+                        <div class="form-group col">
+                            <label for="height">Height</label>
+                            <input type="text" id="height" class="form-control" placeholder="Height" value="900">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>X Colour Options</label>
+                        <div id="xColorOptions" class="btn-group btn-group-toggle btn-group-block" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="xColorOption" autocomplete="off" value="random" checked>
+                                <span class="icon icon-shuffle"></span> Random
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="xColorOption" autocomplete="off" value="palette">
+                                <span class="icon icon-colours"></span> Palette
+                            </label>
+                        </div>
+                        <small id="xPaletteHelp" class="form-text text-muted">Click to edit colours.</small>
+                        <div id="xPalette"></div>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="addXPaletteColor" class="btn btn-link">
+                                <span class="icon icon-squared-plus"></span>
+                            </button>
+                            <button type="button" id="removeXPaletteColor" class="btn btn-link" disabled="true">
+                                <span class="icon icon-squared-minus"></span>
+                            </button>
+                        </div>
+                        <div id="xGradientTypes" class="btn-group btn-group-toggle btn-group-block btn-group-sm" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="xGradientType" autocomplete="off" value="linear" checked> Linear
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="xGradientType" autocomplete="off" value="radial"> Radial
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>Y Colour Options</label>
+                        <div id="yColorOptions" class="btn-group btn-group-toggle btn-group-block" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="yColorOption" autocomplete="off" value="match_x" checked>
+                                <span class="icon icon-link"></span> Match  X
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="yColorOption" autocomplete="off" value="random">
+                                <span class="icon icon-shuffle"></span> Random
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="yColorOption" autocomplete="off" value="palette">
+                                <span class="icon icon-colours"></span> Palette
+                            </label>
+                        </div>
+                        <small id="yPaletteHelp" class="form-text text-muted">Click to edit colours.</small>
+                        <div id="yPalette"></div>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="addYPaletteColor" class="btn btn-link">
+                                <span class="icon icon-squared-plus"></span>
+                            </button>
+                            <button type="button" id="removeYPaletteColor" class="btn btn-link" disabled>
+                                <span class="icon icon-squared-minus"></span>
+                            </button>
+                        </div>
+                        <div id="yGradientTypes" class="btn-group btn-group-toggle btn-group-block btn-group-sm" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="yGradientType" autocomplete="off" value="match-x" checked>
+                                <span class="icon icon-link"></span> Match X
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="yGradientType" autocomplete="off" value="linear"> Linear
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="yGradientType" autocomplete="off" value="radial"> Radial
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>Foreground</label>
+                        <div id="foregroundColorOptions" class="btn-group btn-group-toggle btn-group-block" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="foregroundColorOption" autocomplete="off" value="none" checked> None
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="foregroundColorOption" autocomplete="off" value="color"> Colour
+                            </label>
+                        </div>
+                        <small id="foregroundHelp" class="form-text text-muted">Click to edit colour.</small>
+                        <div id="foregroundColorContainer"></div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <button type="button" id="generate" class="btn btn-primary mt-3"><span class="icon icon-retweet"></span> Regenerate</button>
+                    </div>
+                    <div class="btn-toolbar justify-content-around" role="toolbar">
+                        <a id="downloadPng" class="btn btn-secondary mt-3" download="Pattern.png"><span class="icon icon-image"></span> Download PNG</a>
+                        <a id="downloadSvg" class="btn btn-secondary mt-3" download="Pattern.svg"><span class="icon icon-code"></span> Download SVG</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col preview preview-inset flex-column overflow-scroll">
+                <canvas id="preview" class="object-fit-contain mh-100 mw-100"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../../node_modules/lodash/lodash.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../../node_modules/trianglify/dist/trianglify.min.js"></script>
+    <script src="../../node_modules/chroma-js/chroma.min.js"></script>
+    <script src="../../node_modules/unit-to-px/index.js"></script>
+    <script src="../assets/js/pattern.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/pattern-app.js"></script>
+    <script>
+        // Execute / clear Bootstrap loaders for documentation
+        $(function() {
+            while (window.BS && window.BS.loader && window.BS.loader.length) {
+                (window.BS.loader.pop())()
+            }
+        })
+    </script>
+</body>
+</html>

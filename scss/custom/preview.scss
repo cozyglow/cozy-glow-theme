@@ -1,0 +1,10 @@
+.preview {
+  @extend .d-flex;
+  @extend .justify-content-around;
+
+  background-color: gray("500");
+}
+
+.preview-inset {
+  padding: spacer(5);
+}

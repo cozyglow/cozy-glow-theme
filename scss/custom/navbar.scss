@@ -1,0 +1,24 @@
+.navbar-fixed-top-margin {
+  margin-top: 1.25rem + ($nav-link-padding-y * 2) + ($navbar-padding-y * 2);
+}
+
+.navbar-brand.h1 {
+  @extend .mb-0;
+}
+
+.navbar-collapse {
+  .navbar-collapse-fill-height {
+    @extend .w-100;
+  }
+
+  &.collapsing,
+  &.show {
+    .navbar-collapse-fill-height {
+      height: 100vh;
+    }
+  }
+}
+
+.navbar-nav.nav-justified {
+  @extend .w-100;
+}

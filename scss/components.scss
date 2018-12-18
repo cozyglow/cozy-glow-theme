@@ -1,0 +1,69 @@
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Extended Bootstrap components
+@import "./custom/utilities.scss";
+@import "./custom/functions.scss";
+@import "./custom/type-custom.scss";
+@import "./custom/alerts-custom.scss";
+@import "./custom/buttons-custom.scss";
+@import "./custom/button-group.scss";
+@import "./custom/nav-heading.scss";
+@import "./custom/navbar.scss";
+@import "./custom/navbar-utilities.scss";
+
+// Custom theme components
+@import "./custom/fonts.scss";
+@import "./custom/icons.scss";
+@import "./custom/text-inherit.scss";
+@import "./custom/nav-bordered.scss";
+@import "./custom/buttons-radius.scss";
+@import "./custom/container-custom.scss";
+@import "./custom/block.scss";
+@import "./custom/navbar-transparent.scss";
+@import "./custom/carousel-light.scss";
+@import "./custom/callouts.scss";
+@import "./custom/featured-list.scss";
+@import "./custom/zoom.scss";
+@import "./custom/text-ribbon.scss";
+@import "./custom/iconlist.scss";
+@import "./custom/cards-bold.scss";
+@import "./custom/statcard.scss";
+@import "./custom/pull-quote.scss";
+@import "./custom/stage.scss";
+@import "./custom/preview.scss";
+@import "./custom/screen.scss";
+
+//
+// Custom styles
+//
+html,
+body {
+  @extend .h-100;
+}
+
+html {
+  // set optimal base size
+  font-size: $font-size-root;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  &.text-uppercase {
+    letter-spacing: .15em;
+  }
+  small,
+  .small {
+    font-weight: inherit;
+  }
+}
+
+h6, .h6 {
+  margin-bottom: ($spacer-y * .25);
+  color: lighten($gray-500, 40%);
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: bold;
+}
