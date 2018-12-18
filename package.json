@@ -1,6 +1,5 @@
 {
     "name": "cozy-glow-theme",
-    "private": true,
     "description": "Cozy Glow theme.",
     "main": "gulpfile.js",
     "author": "Cozy Glow",
@@ -33,5 +32,15 @@
         "gulp-uglify": "^3",
         "gulp-wrapper": "^1",
         "pantone-css": "^0.0.1"
-    }
+    },
+    "repository": "https://github.com/cozyglow/cozy-glow-theme.git",
+    "bugs": "https://github.com/cozyglow/cozy-glow-theme/issues",
+    "files": [
+        "dist/*",
+        "docs/*",
+        "fonts/*",
+        "js/*",
+        "scss/*"
+    ],
+    "version": "0.0.1"
 }
