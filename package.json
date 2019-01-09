@@ -2,7 +2,7 @@
     "name": "cozy-glow-theme",
     "description": "Cozy Glow theme.",
     "main": "gulpfile.js",
-    "author": "Cozy Glow",
+    "author": "Cozy Glow (cozyglow.co.uk)",
     "scripts": {
         "start": "./node_modules/.bin/gulp docs"
     },
@@ -31,7 +31,9 @@
         "gulp-sourcemaps": "^2.6.1",
         "gulp-uglify": "^3",
         "gulp-wrapper": "^1",
-        "pantone-css": "^0.0.1"
+        "node-sass": "^4",
+        "node-sass-tilde-importer": "^1",
+        "pantone-css": "^0.1"
     },
     "repository": "https://github.com/cozyglow/cozy-glow-theme.git",
     "bugs": "https://github.com/cozyglow/cozy-glow-theme/issues",
@@ -42,5 +44,5 @@
         "js/*",
         "scss/*"
     ],
-    "version": "0.0.1"
+    "version": "0.1.0"
 }
