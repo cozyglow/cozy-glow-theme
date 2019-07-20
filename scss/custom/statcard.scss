@@ -86,3 +86,14 @@
 .statcard-info    { background-color: theme-color("info"); }
 .statcard-warning { background-color: theme-color("warning"); }
 .statcard-danger  { background-color: theme-color("danger"); }
+
+.statcard-price {
+  margin-top: $spacer-y * .25;
+  margin-bottom: $spacer-y;
+}
+
+.statcard-desc-new {
+  color: $orange;
+  margin-bottom: $spacer-y;
+  text-transform: none;
+}

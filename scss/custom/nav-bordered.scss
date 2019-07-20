@@ -80,12 +80,12 @@
     }
 
     .nav-header {
-      padding-left: (($spacer-x * 1.5) + 4px);
+      padding-left: (($spacer-x * 1.5) + ($spacer * 0.25));
     }
 
     .nav-divider {
       @include nav-divider(rgba(255,255,255,.2));
-      margin-left: (($spacer-x * 1.5) + 4px);
+      margin-left: (($spacer-x * 1.5) + ($spacer * 0.25));
       margin-top: 20px;
       margin-bottom: 25px;
     }

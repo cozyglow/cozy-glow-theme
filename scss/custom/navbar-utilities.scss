@@ -10,7 +10,7 @@
 
 // When a navbar is fixed to the top, add some padding
 .with-top-navbar {
-  padding-top: 49px;
+  margin-top: 1.25rem + ($nav-link-padding-y * 2) + ($navbar-padding-y * 2);
 }
 
 // Fix up counters in the navbar
@@ -110,12 +110,4 @@
 .navbar-btn-avatar img {
   height: 35px;
   width: 35px;
-}
-
-// port of old header
-.navbar-header {
-  @include clearfix;
-  @include media-breakpoint-up(md) {
-    float: left;
-  }
 }

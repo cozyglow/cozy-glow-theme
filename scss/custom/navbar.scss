@@ -1,9 +1,16 @@
-.navbar-fixed-top-margin {
-  margin-top: 1.25rem + ($nav-link-padding-y * 2) + ($navbar-padding-y * 2);
-}
+.navbar-nav {
+  .nav-link {
+    @each $color, $value in $theme-colors {
+      &.navbar-brand-#{$color},
+      &.navbar-icon-#{$color} {
+        color: $value;
 
-.navbar-brand.h1 {
-  @extend .mb-0;
+        svg path {
+          fill: $value;
+        }
+      }
+    }
+  }
 }
 
 .navbar-collapse {
@@ -21,4 +28,104 @@
 
 .navbar-nav.nav-justified {
   @extend .w-100;
+}
+
+.navbar-brand,
+.navbar-icon {
+  @extend .mr-0;
+
+  &.svg {
+    @extend .d-block;
+  }
+
+  svg {
+    max-height: $navbar-brand-height;
+  }
+}
+
+.navbar-brand {
+  h1 {
+    @extend .mb-0;
+  }
+
+  svg {
+    height: $navbar-brand-font-size;
+  }
+}
+
+.navbar-icon {
+  @extend .navbar-brand;
+}
+
+.navbar-header,
+.navbar-list {
+  @extend .navbar-nav;
+  @extend .nav-justified;
+}
+
+.navbar-header {
+  @extend .flex-row;
+  @extend .justify-content-between;
+
+  .nav-item {
+    @extend .flex-grow-0;
+  }
+}
+
+.navbar-list {
+  .nav-item {
+    @extend .flex-fill;
+  }
+}
+
+.navbar-light {
+  .navbar-brand {
+    svg path {
+      fill: $navbar-light-brand-color;
+    }
+
+    @include hover-focus {
+      svg path {
+        fill: $navbar-light-brand-hover-color;
+      }
+    }
+  }
+
+  .navbar-icon {
+    svg path {
+      fill: $navbar-light-color;
+    }
+
+    @include hover-focus {
+      svg path {
+        fill: $navbar-light-hover-color;
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-brand {
+    svg path {
+      fill: $navbar-dark-brand-color;
+    }
+
+    @include hover-focus {
+      svg path {
+        fill: $navbar-dark-brand-hover-color;
+      }
+    }
+  }
+
+  .navbar-icon {
+    svg path {
+      fill: $navbar-dark-color;
+    }
+
+    @include hover-focus {
+      svg path {
+        fill: $navbar-dark-hover-color;
+      }
+    }
+  }
 }

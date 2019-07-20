@@ -1,0 +1,16 @@
+.nav-local {
+  @extend .position-sticky;
+  @extend .py-3;
+
+  .container {
+    @extend .border-bottom;
+    @extend .d-flex;
+    @extend .justify-content-between;
+  }
+
+  .nav-item:last-of-type {
+    .nav-link {
+      @extend .pr-0;
+    }
+  }
+}

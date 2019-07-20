@@ -1,0 +1,7 @@
+.announcement {
+  @extend .alert;
+  @extend .alert-dark;
+  @extend .alert-full;
+  @extend .border-0;
+  @extend .mb-0;
+}

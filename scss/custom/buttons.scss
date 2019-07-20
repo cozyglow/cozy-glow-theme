@@ -1,0 +1,11 @@
+  .btn-link {
+    &::after {
+      @extend .lead;
+
+      content: "›";
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }

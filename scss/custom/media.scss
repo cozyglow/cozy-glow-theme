@@ -1,0 +1,8 @@
+.media-img {
+  @extend .mr-3;
+
+  svg {
+    min-width: $spacer-x * 3;
+    max-height: $spacer-y * 3;
+  }
+}
