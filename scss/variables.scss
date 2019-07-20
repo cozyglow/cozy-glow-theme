@@ -1,10 +1,10 @@
-@import "../node_modules/bootstrap/scss/_functions.scss";
-@import "../node_modules/bootstrap/scss/_variables.scss";
-@import "../node_modules/pantone-css/scss/pantone.scss";
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~pantone-css/scss/pantone";
 
 // deleted bs.4 vars
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
-$font-size-xs:      .75rem !default;
+$font-size-xs:      0.75rem !default;
 $nav-tabs-active-link-hover-bg: $body-bg !default;
 $nav-pills-active-weight: 500;
 
@@ -15,14 +15,16 @@ $font-path: "../fonts/";
 $icon-font-path: "#{$font-path}toolkit-entypo/";
 $icon-font-name: "toolkit-entypo";
 
+$enable-gradients:             true;
+$enable-responsive-font-sizes: true;
 
 // text
 $text-color: #000;
-$letter-spacing-base: -.02em;
+$letter-spacing-base: -0.02em;
 
 
 // Spacing
-$spacer:            20px;
+//$spacer:            20px;
 $spacer-x:          $spacer;
 $spacer-y:          $spacer;
 $grid-gutter-width: 20px;
@@ -101,6 +103,9 @@ $navbar-border:            transparent;
 $navbar-link-active-bg:    transparent;
 $navbar-nav-active-font-weight:    inherit;
 
+$navbar-dark-color:        $white;
+$navbar-dark-active-color: rgba($white, 0.5);
+
 // Navbar inverse
 $navbar-inverse-border: transparent;
 $navbar-inverse-bg:     theme-color("primary");
@@ -124,8 +129,19 @@ $navbar-transparent-toggler-icon-bar-bg:  $navbar-transparent-color;
 $navbar-transparent-toggler-border-color: $navbar-transparent-color;
 $navbar-transparent-toggler-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-arrow-width: $spacer * 2;
+$dropdown-arrow-height: $spacer;
+
 // panels
 $card-border-color: transparent;
+
+
+// Breadcrumbs
+$breadcrumb-divider: quote(">");
 
 
 // Jumbotron
