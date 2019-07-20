@@ -1,18 +1,21 @@
-var fs           = require("fs")
-var gulp         = require("gulp")
-var path         = require("path")
-var sass         = require("gulp-sass")
-var autoprefixer = require("gulp-autoprefixer")
-var sourcemaps   = require("gulp-sourcemaps")
-var cleanCSS     = require("gulp-clean-css")
-var rename       = require("gulp-rename")
-var concat       = require("gulp-concat")
-var uglify       = require("gulp-uglify")
-var connect      = require("gulp-connect")
-var open         = require("gulp-open")
-var babel        = require("gulp-babel")
-var replace      = require("gulp-replace")
-var wrapper      = require("gulp-wrapper")
+var fs            = require("fs")
+var gulp          = require("gulp")
+var path          = require("path")
+var sass          = require("gulp-sass")
+var autoprefixer  = require("gulp-autoprefixer")
+var sourcemaps    = require("gulp-sourcemaps")
+var cleanCSS      = require("gulp-clean-css")
+var rename        = require("gulp-rename")
+var concat        = require("gulp-concat")
+var uglify        = require("gulp-uglify")
+var connect       = require("gulp-connect")
+var open          = require("gulp-open")
+var babel         = require("gulp-babel")
+var replace       = require("gulp-replace")
+var wrapper       = require("gulp-wrapper")
+var tildeImporter = require("node-sass-tilde-importer")
+
+sass.compiler = require("node-sass");
 
 var Paths = {
     HERE                 : "./",
@@ -38,7 +41,7 @@ var Paths = {
 
 var banner  = "/*!\n"
     + " * Cozy Glow\n"
-    + " * Copyright © 2018\n"
+    + " * Copyright © 2018 - 2019\n"
     + " */\n"
 var jqueryCheck = 'if (typeof jQuery === \'undefined\') {\n'
     + '  throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\\\'s JavaScript.\')\n'
@@ -49,6 +52,10 @@ var jqueryVersionCheck = '+function ($) {\n'
     + '    throw new Error(\'Bootstrap\\\'s JavaScript requires at least jQuery v1.9.1 but less than v4.0.0\')\n'
     + '  }\n'
     + '}(jQuery);\n\n'
+
+var sassConfig = {
+    importer: tildeImporter
+}
 
 /**
  * Watch task.
@@ -90,7 +97,7 @@ function server() {
 function scss() {
     return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
         .pipe(sourcemaps.init())
-        .pipe(sass().on("error", sass.logError))
+        .pipe(sass(sassConfig).on("error", sass.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write(Paths.HERE))
         .pipe(gulp.dest(Paths.DIST))
@@ -104,7 +111,7 @@ function scss() {
 function scssMin() {
     return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
         .pipe(sourcemaps.init())
-        .pipe(sass().on("error", sass.logError))
+        .pipe(sass(sassConfig).on("error", sass.logError))
         .pipe(cleanCSS({compatibility: "ie9"}))
         .pipe(autoprefixer())
         .pipe(rename({
