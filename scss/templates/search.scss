@@ -1,0 +1,80 @@
+.search {
+  > .nav {
+    border-color: $border-color;
+    border-width: $border-width;
+    border-bottom-style: solid;
+    width: 100%;
+  }
+
+  .input-group {
+    .input-group-prepend {
+      .btn {
+        border-color: $input-border-color;
+        border-width: $input-border-width;
+        border-right-style: none;
+      }
+    }
+    
+    .form-control {
+      border-left: none;
+    }
+  }
+
+  .nav-option {
+    .nav-item:first-of-type {
+      .btn {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .box {
+    margin-top: $spacer-y * 3;
+    margin-bottom: $spacer-y * 3;
+  }
+
+  .results {
+    margin-top: $spacer-y * .25;
+
+    .value {
+      color: $text-muted;
+    font-size: $font-size-base;
+    }
+  }
+
+  .explore {
+    margin-top: $spacer-y;
+    margin-bottom: $spacer-y;
+
+    .product {
+      @include make-row();
+      margin-top: $spacer-y;
+      margin-bottom: $spacer-y;
+    }
+
+    .img,
+    .description {
+      @include make-col-ready();
+    }
+
+    .img {
+      @include media-breakpoint-up(xs) {
+        @include make-col(1);
+      }
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(2);
+      }
+    }
+
+    .description {
+      @include media-breakpoint-up(xs) {
+        @include make-col(11);
+      }
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(10);
+      }
+    }
+  }
+}
