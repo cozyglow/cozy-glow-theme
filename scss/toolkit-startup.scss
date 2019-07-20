@@ -1,3 +1,5 @@
+@import "~pantone-css/scss/pantone";
+
 // startup
 $theme-colors: (
   primary: $pantone-2129-cp,
@@ -6,15 +8,15 @@ $theme-colors: (
   info: #5bc0de,
   warning: #f0ad4e,
   danger: #d9534f,
-  light: #f5f8fa,
-  dark: #122a38
+  light: $pantone-cool-gray-1-cp,
+  dark: $pantone-546-cp
 );
 
 @import "./variables.scss";
 
 // text overrides
 $body-color: #6c6f73;
-// $font-size-base: 15px;
+//$font-size-base: 15px;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-sans-serif;
 $text-color: #6C6F73;
