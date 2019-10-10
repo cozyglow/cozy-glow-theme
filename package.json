@@ -19,9 +19,9 @@
         "unit-to-px": "^1"
     },
     "devDependencies": {
-        "@babel/core": "^7.5.5",
-        "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
+        "@babel/core": "^7.6.3",
+        "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+        "@babel/preset-env": "^7.6.3",
         "@epickris/bootstrap-kit": "^0.1",
         "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
         "bootstrap": "^4.3.1",
