@@ -1,19 +1,19 @@
-var fs            = require("fs")
-var gulp          = require("gulp")
-var path          = require("path")
-var sass          = require("gulp-sass")
-var autoprefixer  = require("gulp-autoprefixer")
-var sourcemaps    = require("gulp-sourcemaps")
-var cleanCSS      = require("gulp-clean-css")
-var rename        = require("gulp-rename")
-var concat        = require("gulp-concat")
-var uglify        = require("gulp-uglify")
-var connect       = require("gulp-connect")
-var open          = require("gulp-open")
-var babel         = require("gulp-babel")
-var replace       = require("gulp-replace")
-var wrapper       = require("gulp-wrapper")
-var tildeImporter = require("node-sass-tilde-importer")
+const fs            = require("fs")
+const gulp          = require("gulp")
+const path          = require("path")
+const sass          = require("gulp-sass")
+const autoprefixer  = require("gulp-autoprefixer")
+const sourcemaps    = require("gulp-sourcemaps")
+const cleanCSS      = require("gulp-clean-css")
+const rename        = require("gulp-rename")
+const concat        = require("gulp-concat")
+const uglify        = require("gulp-uglify")
+const connect       = require("gulp-connect")
+const open          = require("gulp-open")
+const babel         = require("gulp-babel")
+const replace       = require("gulp-replace")
+const wrapper       = require("gulp-wrapper")
+const tildeImporter = require("node-sass-tilde-importer")
 
 sass.compiler = require("node-sass");
 
@@ -25,17 +25,17 @@ var Paths = {
     SCSS                 : "./scss/**/**",
     JS                   : [
         "./node_modules/bootstrap/js/src/util.js",
-        "./node_modules/bootstrap/js/src/js/alert.js",
-        "./node_modules/bootstrap/js/src/js/button.js",
-        "./node_modules/bootstrap/js/src/js/carousel.js",
-        "./node_modules/bootstrap/js/src/js/collapse.js",
-        "./node_modules/bootstrap/js/src/js/dropdown.js",
-        "./node_modules/bootstrap/js/src/js/modal.js",
-        "./node_modules/bootstrap/js/src/js/tooltip.js",
-        "./node_modules/bootstrap/js/src/js/popover.js",
-        "./node_modules/bootstrap/js/src/js/scrollspy.js",
-        "./node_modules/bootstrap/js/src/js/tab.js",
-        "./js/src/js/*"
+        "./node_modules/bootstrap/js/src/alert.js",
+        "./node_modules/bootstrap/js/src/button.js",
+        "./node_modules/bootstrap/js/src/carousel.js",
+        "./node_modules/bootstrap/js/src/collapse.js",
+        "./node_modules/bootstrap/js/src/dropdown.js",
+        "./node_modules/bootstrap/js/src/modal.js",
+        "./node_modules/bootstrap/js/src/tooltip.js",
+        "./node_modules/bootstrap/js/src/popover.js",
+        "./node_modules/bootstrap/js/src/scrollspy.js",
+        "./node_modules/bootstrap/js/src/tab.js",
+        "./js/*"
     ]
 }
 
@@ -134,16 +134,17 @@ function js() {
             "compact" : false,
             "presets": [
                 [
-                    "es2015",
+                    "@babel/env",
                     {
                         "modules": false,
-                        "loose": true
+                        "loose": true,
+                        "exclude": ["transform-typeof-symbol"]
                     }
                 ]
             ],
             "plugins": [
                 "transform-es2015-modules-strip",
-                "transform-object-rest-spread"
+                "@babel/plugin-proposal-object-rest-spread"
             ]}))
         .pipe(wrapper({
             header: banner
@@ -178,11 +179,12 @@ exports.watch = watch
 exports.docs = docs
 exports.server = server
 exports.scss = scss
-exports.scssMin = scssMin
+exports.scssMin = gulp.series(scss, scssMin)
 exports.js = js
-exports.jsMin = jsMin
+exports.jsMin = gulp.series(js, jsMin)
+exports.default = gulp.parallel(gulp.series(scss, scssMin), gulp.series(js, jsMin))
 
-gulp.task("default", gulp.parallel(scssMin, jsMin))
+gulp.task("default", gulp.parallel(gulp.series(scss, scssMin), gulp.series(js, jsMin)))
 
 gulp.task("watch", watch)
 
