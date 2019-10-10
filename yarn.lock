@@ -715,10 +715,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@epickris/bootstrap-kit@^0.1":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-0.1.0.tgz#80dc2ad0f60a397d411e1c3d530a4ae2ab1a1a2b"
-  integrity sha512-x69+jVvS6mBk5YROioAwrdxUYIbHN1+oDuzWEoTeTRTNMuoDxXdfnQQIJXSuf+oqRplgr6nBnHc0ubxMBNJjDQ==
+"@epickris/bootstrap-kit@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-0.1.1.tgz#9836ed155bc366622fa0c116236de419578a0492"
+  integrity sha512-DB0P+qeFOvmwYox38jw1RYdU6s789B1vgTV1M+Cj8poU9jwoubnUtXSbn34B6TQ2Qh3vuTzGFu7sgYQuV2e8eA==
 
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"
@@ -6023,17 +6023,17 @@ stylelint-config-rational-order@^0.1.2:
     stylelint "^9.10.1"
     stylelint-order "^2.2.1"
 
-stylelint-config-recommended@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.2.0.tgz#46ab139db4a0e7151fd5f94af155512886c96d3f"
-  integrity sha512-bZ+d4RiNEfmoR74KZtCKmsABdBJr4iXRiCso+6LtMJPw5rd/KnxUWTxht7TbafrTJK1YRjNgnN0iVZaJfc3xJA==
+stylelint-config-recommended@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-3.0.0.tgz#e0e547434016c5539fe2650afd58049a2fd1d657"
+  integrity sha512-F6yTRuc06xr1h5Qw/ykb2LuFynJ2IxkKfCMf+1xqPffkxh0S09Zc902XCffcsw/XMFq/OzQ1w54fLIDtmRNHnQ==
 
-stylelint-config-standard@^18.3:
-  version "18.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-18.3.0.tgz#a2a1b788d2cf876c013feaff8ae276117a1befa7"
-  integrity sha512-Tdc/TFeddjjy64LvjPau9SsfVRexmTFqUhnMBrzz07J4p2dVQtmpncRF/o8yZn8ugA3Ut43E6o1GtjX80TFytw==
+stylelint-config-standard@^19:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-19.0.0.tgz#66f0cf13f33b8a9e34965881493b38fc1313693a"
+  integrity sha512-VvcODsL1PryzpYteWZo2YaA5vU/pWfjqBpOvmeA8iB2MteZ/ZhI1O4hnrWMidsS4vmEJpKtjdhLdfGJmmZm6Cg==
   dependencies:
-    stylelint-config-recommended "^2.2.0"
+    stylelint-config-recommended "^3.0.0"
 
 stylelint-order@^2.2.1:
   version "2.2.1"
