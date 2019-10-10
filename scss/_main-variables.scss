@@ -1,0 +1,16 @@
+// Pantone
+@import "~pantone-css/scss/pantone";
+
+// Color System
+$primary:   $pantone-2129-cp;
+$secondary: $white;
+$success:   $pantone-2464-cp;
+$info:      $pantone-2985-cp;
+$warning:   $pantone-1365-cp;
+$danger:    $pantone-red-032-cp;
+$light:     $pantone-cool-gray-1-cp;
+$dark:      $pantone-546-cp;
+
+// Typography
+$font-family-sans-serif: "Cozy Glow Corals", $font-family-sans-serif sans-serif;
+$font-family-base:       $font-family-sans-serif;
