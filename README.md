@@ -9,12 +9,10 @@ This project will consist of the following file structure:
 ├── README.md
 ├── docs/
 ├── less/
-│   ├── bootstrap/
 │   ├── custom/
 │   ├── variables.less
 │   └── toolkit.less
 ├── js/
-│   ├── bootstrap/
 │   └── custom/
 ├── fonts/
 │   ├── bootstrap-entypo.eot
@@ -45,12 +43,12 @@ To install node visit [node][node-download].
 
 To install gulp, run the following command:
 ```
-$ npm install gulp -g
+$ yarn add global gulp
 ```
 
 When you’re done, install the rest of the theme's dependencies:
 ```
-$ npm install
+$ yarn install
 ```
 
 From here on out, simply run `gulp` from your terminal and you're good to go!
