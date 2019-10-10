@@ -4666,10 +4666,10 @@ p-try@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
   integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
 
-pantone-css@^0.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/pantone-css/-/pantone-css-0.1.1.tgz#7e8fda0d1b8302b6bdbdd28a993b06f134da7489"
-  integrity sha512-1c2c9R3Ulcx2WgQYrp5UMmFdmj4/3yYPSywiHFd5u4S/Idut61BWZGqHB12c3qul52bIJV2heP+28/IijcqLEw==
+pantone-css@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/pantone-css/-/pantone-css-0.1.2.tgz#3d0f638979521dff0efa48c22027d4d4d48761a4"
+  integrity sha512-XZXRKHKQwgcNYC2Z2DGcykeRXB/D4lXZrq44o9LQGvEotM/K5RdQcGon81f0ZKLm+1IIXoioSROFd4uIR3Gekw==
 
 parse-entities@^1.0.2, parse-entities@^1.1.0:
   version "1.2.2"
