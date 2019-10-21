@@ -2,7 +2,14 @@
 @import "~@epickris/bootstrap-kit/scss/kit-variables";
 @import "main-variables";
 
+* {
+  color: $black;
+}
+
 hr {
+  width: 100%;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
   border-color: $black;
 }
 
