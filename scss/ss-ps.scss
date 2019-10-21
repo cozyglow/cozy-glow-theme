@@ -7,9 +7,6 @@
 }
 
 hr {
-  width: 100%;
-  margin-top: $spacer;
-  margin-bottom: $spacer;
   border-color: $black;
 }
 
@@ -21,6 +18,10 @@ hr {
       display: none !important;
     }
   }
+}
+
+.row {
+  margin-bottom: $spacer;
 }
 
 .col {
