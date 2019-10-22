@@ -31,6 +31,7 @@ hr {
 [data-value=""] {
   &,
   & * {
+    &,
     &::before,
     &::after {
       display: none !important;
@@ -78,5 +79,9 @@ hr {
 
 .personalisation {
   font-family: "Kingfisher 1";
+  text-align: center;
+}
+
+.dangerous-goods {
   text-align: center;
 }
