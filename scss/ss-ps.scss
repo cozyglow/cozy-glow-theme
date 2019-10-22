@@ -43,6 +43,10 @@ hr {
   font-size: 1.25rem;
 }
 
+.page-break:not([data-value=""]) {
+  page-break-after: always;
+}
+
 .row {
   display: block;
 }
@@ -65,4 +69,9 @@ hr {
 
 .discount {
   text-align: center;
+
+  .display-1,
+  .lead {
+    font-weight: bold;
+  }
 }
