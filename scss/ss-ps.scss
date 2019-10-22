@@ -7,8 +7,25 @@
   font-family: "Cozy Glow Corals";
 }
 
+b,
+strong {
+  font-weight: bold;
+}
+
 hr {
   border-color: $black;
+}
+
+.table {
+  th,
+  td {
+    text-align: left;
+    border-top-color: $black;
+  }
+
+  thead th {
+    border-bottom-color: $black;
+  }
 }
 
 [data-value=""] {
@@ -21,10 +38,31 @@ hr {
   }
 }
 
+[data-qty]:not([data-qty="1"]) {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 .row {
-  margin-bottom: $spacer;
+  display: block;
 }
 
 .col {
   float: left;
+}
+
+.custom-control-label {
+  &::before {
+    background-color: transparent;
+    border: 1px solid $black;
+  }
+}
+
+.barcode {
+  height: $spacer;
+  overflow: hidden;
+}
+
+.discount {
+  text-align: center;
 }
