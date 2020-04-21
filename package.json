@@ -15,7 +15,7 @@
     "dependencies": {
         "chroma-js": "^1",
         "lodash": "^4",
-        "trianglify": "^1.3",
+        "trianglify": "^3",
         "unit-to-px": "^1"
     },
     "devDependencies": {
