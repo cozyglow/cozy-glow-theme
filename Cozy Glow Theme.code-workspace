@@ -1,10 +1,16 @@
 {
 	"folders": [
 		{
+			"name": "cozy-glow-theme",
 			"path": "."
 		},
 		{
-			"path": "/Users/kristian/Projects/pantone-css"
+			"name": "bootstrap-kit",
+			"path": "../../bootstrap-kit"
+		},
+		{
+			"name": "pantone-css",
+			"path": "../../pantone-css"
 		}
 	],
 	"settings": {}
