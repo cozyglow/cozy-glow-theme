@@ -1,0 +1,31 @@
+// Chapter Navbar
+
+.navbar-chapter {
+  padding: 0;
+  font-size: $font-size-sm;
+
+  .container,
+  .container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    overflow-x: scroll;
+  }
+
+  .nav-item {
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  .icon {
+    display: block;
+    width: $spacer * 3;
+    height: $spacer * 3;
+    margin-right: auto;
+    margin-bottom: $nav-link-padding-x / 2;
+    margin-left: auto;
+  }
+}
