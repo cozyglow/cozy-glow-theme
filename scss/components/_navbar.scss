@@ -1,0 +1,134 @@
+// Navbar
+
+.navbar-bag-icon {
+  position: relative;
+
+  .badge {
+    position: absolute;
+    right: -($spacer / 2);
+    bottom: -($spacer / 2);
+    font-size: $font-size-sm;
+  }
+}
+
+.navbar-default {
+  .navbar-brand {
+    > svg {
+      path {
+        fill: $navbar-light-brand-color;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      > svg {
+        path {
+          fill: $navbar-light-brand-hover-color;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      > svg {
+        path {
+          fill: $navbar-light-color;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        > svg {
+          path {
+            fill: $navbar-light-hover-color;
+          }
+        }
+      }
+
+      &.disabled {
+        > svg {
+          path {
+            fill: $navbar-light-disabled-color;
+          }
+        }
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      > svg {
+        path {
+          fill: $navbar-light-active-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-brand {
+    > svg {
+      path {
+        fill: $navbar-dark-brand-color;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      > svg {
+        path {
+          fill: $navbar-dark-brand-hover-color;
+        }
+      }
+    }
+  }
+
+  .navbar-bag-icon {
+    background-image: escape-svg($navbar-dark-bag-icon-bg);
+
+    .badge {
+      background: $navbar-dark-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      > svg {
+        path {
+          fill: $navbar-dark-color;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        > svg {
+          path {
+            fill: $navbar-dark-hover-color;
+          }
+        }
+      }
+
+      &.disabled {
+        > svg {
+          path {
+            fill: $navbar-dark-disabled-color;
+          }
+        }
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      > svg {
+        path {
+          fill: $navbar-dark-active-color;
+        }
+      }
+    }
+  }
+}
