@@ -9,6 +9,11 @@
   h2,
   .h2 {
     counter-increment: section;
+
+    &:before {
+      content: "Section " counter(section) ". ";
+      text-transform: uppercase;
+    }
   }
   
   ol {
@@ -25,10 +30,6 @@
 
   .header {
     background-color: $white;
-  }
-
-  .section-number {
-    text-transform: uppercase;
   }
 
   .language-code {
