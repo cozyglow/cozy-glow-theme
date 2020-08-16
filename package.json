@@ -25,7 +25,7 @@
         "@epickris/bootstrap-kit": "^0.1.1",
         "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
         "bootstrap": "^4",
-        "bootstrap-icons": "^1",
+        "bootstrap-icons": "^1.0.0-alpha",
         "clean-css-cli": "^4.3",
         "gh-pages": "^2",
         "gulp": "^4.0.2",
