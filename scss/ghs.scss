@@ -18,6 +18,8 @@
   
   ol {
     counter-reset: sub-section;
+    list-style: none;
+    padding-inline-start: 0;
   
     li {
       counter-increment: sub-section;
