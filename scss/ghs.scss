@@ -27,9 +27,9 @@
 
       &:before {
         content: counter(section) "." counters(sub-section, ".");
-        float: left;
         font-weight: $headings-font-weight;
         text-indent: -2rem;
+        position: absolute;
       }
     }
   }
