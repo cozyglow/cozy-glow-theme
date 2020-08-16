@@ -6,6 +6,23 @@
 @import "fonts";
 
 .sds {
+  h2,
+  .h2 {
+    counter-increment: section;
+  }
+  
+  ol {
+    counter-reset: sub-section;
+  
+    li {
+      counter-increment: sub-section;
+    }
+  }
+
+  .datasheet {
+    counter-reset: section;
+  }
+
   .header {
     background-color: $white;
   }
