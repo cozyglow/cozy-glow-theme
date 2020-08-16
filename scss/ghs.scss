@@ -40,9 +40,7 @@
 
   .header {
     background-color: $white;
-  }
-
-  .language-code {
-    text-transform: uppercase;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
   }
 }
