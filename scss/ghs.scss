@@ -21,6 +21,10 @@
   
     li {
       counter-increment: sub-section;
+
+      &:before {
+        content: counter(section) "." counters(sub-section, ".");
+      }
     }
   }
 
