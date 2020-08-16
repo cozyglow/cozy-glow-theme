@@ -1,10 +1,6 @@
 @import "~@epickris/bootstrap-kit/scss/variables";
 @import "~@epickris/bootstrap-kit/scss/kit-variables";
-@import "main-variables";
-
-$font-size-root: 10px;
-
-@import "~bootstrap/scss/_mixins";
-@import "~bootstrap/scss/_reboot";
-
-.sds {}
+@import "ghs-variables";
+@import "~@epickris/bootstrap-kit/scss/components";
+@import "components";
+@import "fonts";
