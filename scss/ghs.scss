@@ -2,9 +2,9 @@
 @import "~@epickris/bootstrap-kit/scss/kit-variables";
 @import "main-variables";
 
-.sds {
-  h1,
-  .h1 {
-    font-size: $font-size-base * (18 / 11);
-  }
-}
+$font-size-root: 10px;
+
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_reboot";
+
+.sds {}
