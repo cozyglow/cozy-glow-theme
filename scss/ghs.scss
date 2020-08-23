@@ -16,12 +16,12 @@
     }
   }
   
-  ol {
+  > ol {
     counter-reset: sub-section;
     list-style: none;
     padding-inline-start: 0;
   
-    li {
+    > li {
       counter-increment: sub-section;
       padding-inline-start: 2rem;
 
