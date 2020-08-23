@@ -28,6 +28,7 @@
       &:before {
         content: counter(section) "." counters(sub-section, ".");
         font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
         text-indent: -2rem;
         position: absolute;
       }
