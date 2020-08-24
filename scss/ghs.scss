@@ -16,9 +16,12 @@
     }
   }
 
+  .container {
+    max-width: 210mm;
+  }
+
   .datasheet {
     counter-reset: section;
-    max-width: 210mm;
   }
 
   .header {
