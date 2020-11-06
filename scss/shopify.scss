@@ -1,0 +1,15 @@
+@import "~@epickris/bootstrap-kit/scss/variables";
+@import "~@epickris/bootstrap-kit/scss/kit-variables";
+@import "main-variables";
+
+#shopify-product-reviews {
+  &.container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .spr-container,
+  .spr-review {
+    border: none;
+  }
+}
