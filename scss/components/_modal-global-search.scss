@@ -1,0 +1,63 @@
+// Global Search Modal
+
+.modal-global-search {
+  transform: none;
+
+  &.fade {
+    .modal-dialog {
+      transform: $modal-show-transform;
+    }
+  }
+
+  .modal-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+  
+      &#{$infix} {
+        @include media-breakpoint-down($breakpoint) {
+          max-width: none;
+        }
+
+        @include media-breakpoint-up($next) {
+          .modal-header {
+            &.navbar {
+              .form-control {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                color: $input-icon-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-dialog {
+    margin-top: 0;
+
+    > .container {
+      padding: 0;
+    }
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .modal-header {
+    &.navbar{
+      background: transparent;
+      padding: $navbar-padding-y 0;
+    }
+  }
+
+  .modal-body {
+    background-color: $white;
+    border-bottom-right-radius: $modal-content-border-radius;
+    border-bottom-left-radius: $modal-content-border-radius;
+  }
+}
