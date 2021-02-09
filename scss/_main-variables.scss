@@ -1,5 +1,8 @@
+@import "@epickris/bootstrap-kit/scss/variables"; // Required
+@import "@epickris/bootstrap-kit/scss/kit-variables"; // Required
+
 // Pantone
-@import "~pantone-css/scss/pantone";
+@import "pantone-css/scss/pantone";
 
 // Color System
 $primary:   $pantone-2129-cp;

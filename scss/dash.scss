@@ -1,0 +1,45 @@
+@import "main-variables";
+@import "components";
+@import "fonts";
+
+body {
+  background-color: $black;
+}
+
+.widget {
+  border-radius: $border-radius-lg * 4;
+  //box-shadow: $box-shadow;
+}
+
+.widget-cal-clock {
+  background-color: $white;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  padding: $spacer;
+
+  &.widget {
+    display: flex;
+  }
+
+  * {
+    text-align: start;
+  }
+
+  .clock {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .day {
+    color: $red;
+    text-transform: uppercase;
+  }
+
+  .time {
+    align-self: center;
+    color: $gray-500;
+  }
+}
+
+@import "@epickris/bootstrap-kit/scss/kit";

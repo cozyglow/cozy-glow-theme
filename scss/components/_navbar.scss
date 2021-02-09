@@ -88,6 +88,7 @@
 
   .navbar-bag-icon {
     background-image: escape-svg($navbar-dark-bag-icon-bg);
+    background-size: 90%;
 
     .badge {
       background: $navbar-dark-color;

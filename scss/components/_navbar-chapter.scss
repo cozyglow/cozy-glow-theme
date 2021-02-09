@@ -3,6 +3,7 @@
 .navbar-chapter {
   padding: 0;
   font-size: $font-size-sm;
+  z-index: $zindex-sticky - 1;
 
   .container,
   .container-fluid {
