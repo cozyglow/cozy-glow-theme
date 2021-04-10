@@ -9,6 +9,7 @@
     url('#{$font-path}corals/corals-thin.woff') format('woff'),
     url('#{$font-path}corals/corals-thin.ttf') format('truetype'),
     url('#{$font-path}corals/corals-thin.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -22,6 +23,7 @@
     url('#{$font-path}corals/corals-thin-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-thin-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-thin-italic.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -35,6 +37,7 @@
     url('#{$font-path}corals/corals-light.woff') format('woff'),
     url('#{$font-path}corals/corals-light.ttf') format('truetype'),
     url('#{$font-path}corals/corals-light.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -48,6 +51,7 @@
     url('#{$font-path}corals/corals-light-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-light-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-light-italic.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -61,6 +65,7 @@
     url('#{$font-path}corals/corals-regular.woff') format('woff'),
     url('#{$font-path}corals/corals-regular.ttf') format('truetype'),
     url('#{$font-path}corals/corals-regular.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -74,6 +79,7 @@
     url('#{$font-path}corals/corals-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-italic.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -87,6 +93,7 @@
     url('#{$font-path}corals/corals-bold.woff') format('woff'),
     url('#{$font-path}corals/corals-bold.ttf') format('truetype'),
     url('#{$font-path}corals/corals-bold.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -100,6 +107,7 @@
     url('#{$font-path}corals/corals-bold-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-bold-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-bold-italic.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -113,6 +121,7 @@
     url('#{$font-path}corals/corals-extra-bold.woff') format('woff'),
     url('#{$font-path}corals/corals-extra-bold.ttf') format('truetype'),
     url('#{$font-path}corals/corals-extra-bold.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -126,6 +135,7 @@
     url('#{$font-path}corals/corals-extra-bold-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-extra-bold-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-extra-bold-italic.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -139,6 +149,7 @@
     url('#{$font-path}corals/corals-black.woff') format('woff'),
     url('#{$font-path}corals/corals-black.ttf') format('truetype'),
     url('#{$font-path}corals/corals-black.svg#wf') format('svg');
+  font-display: swap
 }
 
 @font-face {
@@ -152,4 +163,5 @@
     url('#{$font-path}corals/corals-black-italic.woff') format('woff'),
     url('#{$font-path}corals/corals-black-italic.ttf') format('truetype'),
     url('#{$font-path}corals/corals-black-italic.svg#wf') format('svg');
+  font-display: swap
 }
