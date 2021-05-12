@@ -43,10 +43,11 @@
     "watch": "npm-run-all --parallel watch-*",
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix\"",
     "watch-css-dist": "nodemon --watch dist/css/ --ext css --ignore \"dist/css/*.rtl.*\" --exec \"npm run css-rtl\"",
-    "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\""
+    "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\"",
+    "prepublishOnly": "npm-run-all dist"
   },
   "dependencies": {
-    "@epickris/bootstrap-kit": "^1.0.1",
+    "@epickris/bootstrap-kit": "^1.0.2",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0",
     "bootstrap-icons": "^1.4.1",

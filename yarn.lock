@@ -899,10 +899,10 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@epickris/bootstrap-kit@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-1.0.1.tgz#064b31a30bc625b9ff0a14cdbd61a03dcb557a92"
-  integrity sha512-f1nHrbvI7cHJJQuqtoy3VgjGElSzITJ+QFnMeJZ6wcWXGJ2YZIvRR3jXM4dI6+/XFrbQFFK4/WJFTmZMlrke9w==
+"@epickris/bootstrap-kit@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-1.0.2.tgz#ba92f2ef850a6ecda9d9d4ef30822e05bf8d94bd"
+  integrity sha512-nQ+UDdFsnoya83QmKGGoPS7F4a5K4dbumYbKKFn3UabFAMkYY2C1x5OEtChQnirLF/eMRz4sL++SnEHXSuB8eQ==
   dependencies:
     bootstrap "^5.0.0"
 
