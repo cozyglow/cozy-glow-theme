@@ -2,13 +2,13 @@
   font-weight: 100;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-thin.eot');
+  src: url('#{$font-path-corals}corals-thin.eot');
   src:
-    url('#{$font-path}corals/corals-thin.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-thin.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-thin.woff') format('woff'),
-    url('#{$font-path}corals/corals-thin.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-thin.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-thin.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-thin.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-thin.woff') format('woff'),
+    url('#{$font-path-corals}corals-thin.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-thin.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -16,13 +16,13 @@
   font-weight: 100;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-thin-italic.eot');
+  src: url('#{$font-path-corals}corals-thin-italic.eot');
   src:
-    url('#{$font-path}corals/corals-thin-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-thin-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-thin-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-thin-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-thin-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-thin-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-thin-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-thin-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-thin-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-thin-italic.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -30,13 +30,13 @@
   font-weight: 300;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-light.eot');
+  src: url('#{$font-path-corals}corals-light.eot');
   src:
-    url('#{$font-path}corals/corals-light.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-light.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-light.woff') format('woff'),
-    url('#{$font-path}corals/corals-light.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-light.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-light.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-light.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-light.woff') format('woff'),
+    url('#{$font-path-corals}corals-light.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-light.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -44,13 +44,13 @@
   font-weight: 300;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-light-italic.eot');
+  src: url('#{$font-path-corals}corals-light-italic.eot');
   src:
-    url('#{$font-path}corals/corals-light-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-light-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-light-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-light-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-light-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-light-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-light-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-light-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-light-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-light-italic.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -58,13 +58,13 @@
   font-weight: normal;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-regular.eot');
+  src: url('#{$font-path-corals}corals-regular.eot');
   src:
-    url('#{$font-path}corals/corals-regular.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-regular.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-regular.woff') format('woff'),
-    url('#{$font-path}corals/corals-regular.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-regular.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-regular.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-regular.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-regular.woff') format('woff'),
+    url('#{$font-path-corals}corals-regular.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-regular.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -72,13 +72,13 @@
   font-weight: normal;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-italic.eot');
+  src: url('#{$font-path-corals}corals-italic.eot');
   src:
-    url('#{$font-path}corals/corals-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-italic.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -86,13 +86,13 @@
   font-weight: bold;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-bold.eot');
+  src: url('#{$font-path-corals}corals-bold.eot');
   src:
-    url('#{$font-path}corals/corals-bold.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-bold.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-bold.woff') format('woff'),
-    url('#{$font-path}corals/corals-bold.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-bold.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-bold.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-bold.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-bold.woff') format('woff'),
+    url('#{$font-path-corals}corals-bold.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-bold.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -100,13 +100,13 @@
   font-weight: bold;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-bold-italic.eot');
+  src: url('#{$font-path-corals}corals-bold-italic.eot');
   src:
-    url('#{$font-path}corals/corals-bold-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-bold-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-bold-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-bold-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-bold-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-bold-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-bold-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-bold-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-bold-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-bold-italic.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -114,13 +114,13 @@
   font-weight: 800;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-extra-bold.eot');
+  src: url('#{$font-path-corals}corals-extra-bold.eot');
   src:
-    url('#{$font-path}corals/corals-extra-bold.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-extra-bold.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-extra-bold.woff') format('woff'),
-    url('#{$font-path}corals/corals-extra-bold.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-extra-bold.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-extra-bold.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-extra-bold.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-extra-bold.woff') format('woff'),
+    url('#{$font-path-corals}corals-extra-bold.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-extra-bold.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -128,13 +128,13 @@
   font-weight: 800;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-extra-bold-italic.eot');
+  src: url('#{$font-path-corals}corals-extra-bold-italic.eot');
   src:
-    url('#{$font-path}corals/corals-extra-bold-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-extra-bold-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-extra-bold-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-extra-bold-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-extra-bold-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-extra-bold-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-extra-bold-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-extra-bold-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-extra-bold-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-extra-bold-italic.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -142,13 +142,13 @@
   font-weight: 900;
   font-family: "Cozy Glow Corals";
   font-style: normal;
-  src: url('#{$font-path}corals/corals-black.eot');
+  src: url('#{$font-path-corals}corals-black.eot');
   src:
-    url('#{$font-path}corals/corals-black.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-black.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-black.woff') format('woff'),
-    url('#{$font-path}corals/corals-black.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-black.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-black.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-black.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-black.woff') format('woff'),
+    url('#{$font-path-corals}corals-black.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-black.svg#wf') format('svg');
   font-display: swap
 }
 
@@ -156,12 +156,12 @@
   font-weight: 900;
   font-family: "Cozy Glow Corals";
   font-style: italic;
-  src: url('#{$font-path}corals/corals-black-italic.eot');
+  src: url('#{$font-path-corals}corals-black-italic.eot');
   src:
-    url('#{$font-path}corals/corals-black-italic.eot?#iefix') format('eot'),
-    url('#{$font-path}corals/corals-black-italic.woff2') format('woff2'),
-    url('#{$font-path}corals/corals-black-italic.woff') format('woff'),
-    url('#{$font-path}corals/corals-black-italic.ttf') format('truetype'),
-    url('#{$font-path}corals/corals-black-italic.svg#wf') format('svg');
+    url('#{$font-path-corals}corals-black-italic.eot?#iefix') format('eot'),
+    url('#{$font-path-corals}corals-black-italic.woff2') format('woff2'),
+    url('#{$font-path-corals}corals-black-italic.woff') format('woff'),
+    url('#{$font-path-corals}corals-black-italic.ttf') format('truetype'),
+    url('#{$font-path-corals}corals-black-italic.svg#wf') format('svg');
   font-display: swap
 }
