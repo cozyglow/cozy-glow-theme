@@ -46,7 +46,7 @@
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\""
   },
   "dependencies": {
-    "@epickris/bootstrap-kit": "^0.1.2",
+    "@epickris/bootstrap-kit": "^1.0.1",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0",
     "bootstrap-icons": "^1.4.1",

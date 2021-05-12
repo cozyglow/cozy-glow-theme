@@ -899,10 +899,12 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@epickris/bootstrap-kit@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-0.1.2.tgz#1c6effe821cf132898fb426979613a045b6687e3"
-  integrity sha512-DPwP0BpOkEFyULRul7Nq91xAA7vsLkq0weXZvcp7mxqYsWVgDOCDTK5b8Y5tSOQOfzvfYGzqkW/q/PLnWVskxQ==
+"@epickris/bootstrap-kit@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@epickris/bootstrap-kit/-/bootstrap-kit-1.0.1.tgz#064b31a30bc625b9ff0a14cdbd61a03dcb557a92"
+  integrity sha512-f1nHrbvI7cHJJQuqtoy3VgjGElSzITJ+QFnMeJZ6wcWXGJ2YZIvRR3jXM4dI6+/XFrbQFFK4/WJFTmZMlrke9w==
+  dependencies:
+    bootstrap "^5.0.0"
 
 "@eslint/eslintrc@^0.4.1":
   version "0.4.1"
