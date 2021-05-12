@@ -1,15 +1,13 @@
 @font-face {
   font-family: "Kingfisher 1";
   src: url("#{$font-path-kingfisher}kingfisher-1.eot");
-  src:
-    url("#{$font-path-kingfisher}kingfisher-1.eot?#iefix") format("eot"), url("#{$font-path-kingfisher}kingfisher-1.woff2") format("woff2"), url("#{$font-path-kingfisher}kingfisher-1.woff") format("woff"), url("#{$font-path-kingfisher}kingfisher-1.ttf") format("truetype"), url("#{$font-path-kingfisher}kingfisher-1.svg#wf") format("svg");
+  src: url("#{$font-path-kingfisher}kingfisher-1.eot?#iefix") format("eot"), url("#{$font-path-kingfisher}kingfisher-1.woff2") format("woff2"), url("#{$font-path-kingfisher}kingfisher-1.woff") format("woff"), url("#{$font-path-kingfisher}kingfisher-1.ttf") format("truetype"), url("#{$font-path-kingfisher}kingfisher-1.svg#wf") format("svg");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kingfisher 2";
   src: url("#{$font-path-kingfisher}kingfisher-2.eot");
-  src:
-    url("#{$font-path-kingfisher}kingfisher-2.eot?#iefix") format("eot"), url("#{$font-path-kingfisher}kingfisher-2.woff2") format("woff2"), url("#{$font-path-kingfisher}kingfisher-2.woff") format("woff"), url("#{$font-path-kingfisher}kingfisher-2.ttf") format("truetype"), url("#{$font-path-kingfisher}kingfisher-2.svg#wf") format("svg");
+  src: url("#{$font-path-kingfisher}kingfisher-2.eot?#iefix") format("eot"), url("#{$font-path-kingfisher}kingfisher-2.woff2") format("woff2"), url("#{$font-path-kingfisher}kingfisher-2.woff") format("woff"), url("#{$font-path-kingfisher}kingfisher-2.ttf") format("truetype"), url("#{$font-path-kingfisher}kingfisher-2.svg#wf") format("svg");
   font-display: swap;
 }
