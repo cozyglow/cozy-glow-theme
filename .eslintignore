@@ -1,3 +1,2 @@
 **/*.min.js
 **/dist/
-node_modules
