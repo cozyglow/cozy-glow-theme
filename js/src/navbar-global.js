@@ -36,9 +36,6 @@ const SELECTOR_NAVBAR_GLOBAL = '[data-navbar-global]';
 const SELECTOR_NAVBAR = '.navbar';
 const SELECTOR_PREDICTIVE_SEARCH_DRAWER = '[data-predictive-search-drawer]';
 
-const DATA_EXPAND_BREAKPOINT = 'expand-breakpoint';
-const DATA_SEARCH_SUGGESTIONS_API = 'search-suggestions-api';
-
 /**
  * ------------------------------------------------------------------------
  * Class Definition

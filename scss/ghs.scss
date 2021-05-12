@@ -15,9 +15,9 @@
   .h2 {
     counter-increment: section;
 
-    &:before {
-      content: "Section " counter(section) ": ";
+    &::before {
       text-transform: uppercase;
+      content: "Section " counter(section) ": ";
     }
   }
 
@@ -26,10 +26,10 @@
   }
 
   .header {
-    background-color: $white;
-    border-bottom: solid $border-width $border-color;
     padding-top: $spacer;
     padding-bottom: $spacer;
+    background-color: $white;
+    border-bottom: solid $border-width $border-color;
   }
 
   .section {
@@ -37,20 +37,20 @@
     page-break-inside: avoid;
 
     > ol {
-      counter-reset: sub-section;
       list-style: none;
+      counter-reset: sub-section;
       padding-inline-start: 0;
 
       > li {
         counter-increment: sub-section;
         padding-inline-start: 2rem;
 
-        &:before {
-          content: counter(section) "." counters(sub-section, ".");
+        &::before {
+          position: absolute;
           font-weight: $headings-font-weight;
           line-height: $headings-line-height;
           text-indent: -2rem;
-          position: absolute;
+          content: counter(section) "." counters(sub-section, ".");
         }
       }
 
@@ -72,5 +72,6 @@
   }
 }
 
+/* stylelint-disable no-invalid-position-at-import-rule */
 @import "@epickris/bootstrap-kit/scss/components";
 @import "bootstrap/scss/bootstrap";

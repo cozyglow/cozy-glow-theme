@@ -32,6 +32,7 @@
   .navbar-nav {
     .nav-link {
       > svg {
+        /* stylelint-disable-next-line selector-max-compound-selectors */
         path {
           fill: $navbar-light-color;
         }
@@ -40,6 +41,7 @@
       &:hover,
       &:focus {
         > svg {
+          /* stylelint-disable-next-line selector-max-compound-selectors */
           path {
             fill: $navbar-light-hover-color;
           }
@@ -48,6 +50,7 @@
 
       &.disabled {
         > svg {
+          /* stylelint-disable-next-line selector-max-compound-selectors */
           path {
             fill: $navbar-light-disabled-color;
           }
@@ -59,7 +62,9 @@
     .active > .nav-link,
     .nav-link.show,
     .nav-link.active {
+      /* stylelint-disable selector-max-compound-selectors */
       > svg {
+        /* stylelint-disable selector-max-combinators */
         path {
           fill: $navbar-light-active-color;
         }

@@ -1,8 +1,8 @@
 // Global Navbar
 
 .navbar-global {
-  border: none;
   height: $nav-link-height + ($navbar-padding-y * 2);
+  border: none;
 
   &.navbar-expand {
     @each $breakpoint in map-keys($grid-breakpoints) {
@@ -101,7 +101,7 @@
 
     .nav-item {
       opacity: 0;
-      transform: scale(0.8);
+      transform: scale(.8);
 
       &:nth-child(1) {
         transition-delay: 99ms;
@@ -148,15 +148,15 @@
   &.open,
   &.opening {
     .navbar-toggler-esq {
-      opacity: 0;
       visibility: hidden;
+      opacity: 0;
     }
   }
 
   .container {
     box-sizing: content-box;
 
-    & > *:first-child {
+    > *:first-child {
       transition: $transition-base;
     }
   }

@@ -1,13 +1,13 @@
 @import "main-variables";
 
 * {
+  font-family: $font-family-sans-serif;
   color: $black;
-  font-family: "Cozy Glow Corals";
 }
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 hr {
@@ -26,20 +26,19 @@ hr {
   }
 }
 
-[data-value=""] {
+[data-value=""],
+[data-value=""] * {
   &,
-  & * {
-    &,
-    &::before,
-    &::after {
-      display: none !important;
-    }
+  &::before,
+  &::after {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
   }
 }
 
 [data-qty]:not([data-qty="1"]) {
-  font-weight: bold;
   font-size: 1.5rem;
+  font-weight: $font-weight-bold;
 }
 
 .page-break:not([data-value=""]) {
@@ -71,12 +70,12 @@ hr {
 
   .display-1,
   .lead {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
   }
 }
 
 .personalisation {
-  font-family: "Kingfisher 1";
+  font-family: "Kingfisher 1", $font-family-sans-serif;
   text-align: center;
 }
 

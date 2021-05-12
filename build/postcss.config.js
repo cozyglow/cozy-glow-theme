@@ -1,6 +1,6 @@
-module.exports = ctx => {
+module.exports = context => {
   return {
-    map: ctx.file.dirname.includes('examples') ?
+    map: context.file.dirname.includes('examples') ?
       false :
       {
         inline: false,
@@ -11,7 +11,7 @@ module.exports = ctx => {
       autoprefixer: {
         cascade: false
       },
-      rtlcss: ctx.env === 'RTL' ? {} : false
+      rtlcss: context.env === 'RTL' ? {} : false
     }
   };
 };

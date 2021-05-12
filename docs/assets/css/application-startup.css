@@ -1,22 +1,22 @@
 /* navbar */
 .app-navbar {
+  position: absolute;
   font-weight: 500;
   letter-spacing: .05em;
-  position: absolute;
 }
 
 
 /* header block */
 .app-graph {
-  width: 150%;
   position: absolute;
   right: 0;
   bottom: -40px;
+  width: 150%;
 }
 @media (min-width: 768px) {
   .app-graph {
-    width: 100%;
     bottom: 0;
+    width: 100%;
   }
 }
 
@@ -34,21 +34,21 @@
 
 /* code block */
 .app-code-block {
-  background-color: #262F36;
   overflow: hidden;
+  background-color: #262f36;
 }
 .app-code {
-  color: #6EA4CF;
-  border: #495158 1px solid;
-  background: transparent;
-  font-size: 12px;
   padding: 20px;
-  line-height: 1.55;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #6ea4cf;
+  background: transparent;
+  border: #495158 1px solid;
   border-radius: .3rem;
 }
 .app-code span {
-  color: #8496A5;
+  color: #8496a5;
 }
 @media (min-width: 768px) {
   .app-code {
@@ -72,11 +72,11 @@
 
 /* brand ribbon block */
 .app-ribbon {
-  background: #2595FF;
+  background: #2595ff;
 }
 .app-ribbon .container {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
   margin-bottom: -30px;
 }
 .app-ribbon img {
@@ -100,7 +100,7 @@
 
 /* price plan block */
 .app-price-plans {
-  background-color: #F4F5F6;
+  background-color: #f4f5f6;
 }
 .app-price-plans .container {
   margin-bottom: -60px;
@@ -109,7 +109,7 @@
 
 /* footer block */
 .app-footer {
-  background-color: #262F36;
+  background-color: #262f36;
 }
 .app-footer a {
   color: #fff;

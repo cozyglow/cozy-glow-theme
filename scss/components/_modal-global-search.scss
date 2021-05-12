@@ -22,11 +22,12 @@
         @include media-breakpoint-up($next) {
           .modal-header {
             &.navbar {
+              /* stylelint-disable-next-line selector-max-class */
               .form-control {
+                color: $input-icon-color;
                 background-color: transparent;
                 border: none;
                 box-shadow: none;
-                color: $input-icon-color;
               }
             }
           }
@@ -49,17 +50,19 @@
   }
 
   .modal-header {
-    &.navbar{
-      background: transparent;
+    &.navbar {
       padding: $navbar-padding-y 0;
+      background: transparent;
 
       &.navbar-dark {
+        /* stylelint-disable-next-line selector-max-class */
         .form-control {
           color: $navbar-dark-color;
         }
       }
 
       &.navbar-light {
+        /* stylelint-disable-next-line selector-max-class */
         .form-control {
           color: $navbar-light-color;
         }

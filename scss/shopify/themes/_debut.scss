@@ -1,3 +1,5 @@
+/* stylelint-disable selector-class-pattern, selector-no-qualifying-type */
+
 .page-container {
   overflow: inherit;
   transform: none;
@@ -36,8 +38,8 @@
   ul {
     &.list-unstyled,
     &.navbar-nav {
-      list-style: none;
       margin-left: 0;
+      list-style: none;
     }
 
     &.navbar-nav {
@@ -61,13 +63,13 @@
 }
 
 .slideshow__btn {
-  background-color: var(--color-btn-primary);
-  color: var(--color-btn-primary-text);
   min-height: inherit;
+  color: var(--color-btn-primary-text);
+  background-color: var(--color-btn-primary);
 }
 
 .mega-title {
-  color: var(--color-overlay-title-text)
+  color: var(--color-overlay-title-text);
 }
 
 .collection-grid-item__title {

@@ -1,11 +1,13 @@
+/* stylelint-disable declaration-no-important, selector-class-pattern */
+
 .locale-bar__container {
   border-bottom: none !important;
 
   .locale-bar__content {
     align-items: center;
+    padding: $alert-padding-y ($grid-gutter-width / 2);
     margin-right: auto !important;
     margin-left: auto !important;
-    padding: $alert-padding-y ($grid-gutter-width / 2);
   }
 
   @if $enable-grid-classes {
@@ -29,9 +31,9 @@
   }
 
   .locale-bar__call-to-action {
-    align-items: center;
     display: flex;
     flex-grow: 1;
+    align-items: center;
 
     > * {
       flex: 1 1 auto;
