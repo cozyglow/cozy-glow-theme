@@ -27,7 +27,7 @@
     "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/main.bundle.js.map,includeSources,url=main.bundle.min.js.map\" --output dist/js/main.bundle.min.js dist/js/main.bundle.js",
     "js-test": "npm-run-all --parallel js-test-karma js-test-jquery",
     "js-debug": "cross-env DEBUG=true npm run js-test-karma",
-    "js-test-karma": "karma start js/tests/karma.conf.js --no-fail-on-empty-test-suite",
+    "js-test-karma": "karma start js/tests/karma.config.js --no-fail-on-empty-test-suite",
     "js-test-cloud": "cross-env BROWSERSTACK=true npm run js-test-karma",
     "js-test-jquery": "cross-env JQUERY=true npm run js-test-karma",
     "lint": "npm-run-all --parallel js-lint css-lint lockfile-lint",
