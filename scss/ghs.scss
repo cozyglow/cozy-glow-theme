@@ -3,18 +3,22 @@
 @import "fonts";
 
 .sds {
+  h1,
+  .h2 {
+    > small,
+    > .small {
+      font-weight: inherit;
+    }
+  }
+
   h2,
   .h2 {
     counter-increment: section;
 
     &:before {
-      content: "Section " counter(section) ". ";
+      content: "Section " counter(section) ": ";
       text-transform: uppercase;
     }
-  }
-
-  .container {
-    max-width: 210mm;
   }
 
   .datasheet {
@@ -23,20 +27,24 @@
 
   .header {
     background-color: $white;
+    border-bottom: solid $border-width $border-color;
     padding-top: $spacer;
     padding-bottom: $spacer;
   }
 
   .section {
+    margin-top: $spacer;
+    page-break-inside: avoid;
+
     > ol {
       counter-reset: sub-section;
       list-style: none;
       padding-inline-start: 0;
-    
+
       > li {
         counter-increment: sub-section;
         padding-inline-start: 2rem;
-  
+
         &:before {
           content: counter(section) "." counters(sub-section, ".");
           font-weight: $headings-font-weight;
@@ -63,3 +71,6 @@
     text-align: center;
   }
 }
+
+@import "@epickris/bootstrap-kit/scss/components";
+@import "bootstrap/scss/bootstrap";
