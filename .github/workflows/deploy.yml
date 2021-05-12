@@ -2,31 +2,50 @@ name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: master
+  release:
+    types: [released]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+        os: [ubuntu-latest]
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: 12
-      - run: yarn install
-      - run: yarn run build
+          node-version: ${{ matrix.node-version }}
+      - name: yarn install, dist and test
+        run: |
+          yarn install
+          yarn run dist
+          yarn test
+        env:
+          CI: true
 
   deploy:
+    # publish only if we are on our own repo
     if: github.repository == 'cozyglow/cozy-glow-theme'
+
+    needs: build # only run if build succeeds
+
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 10 # use the minimum required version
+          registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - run: yarn run build
+      - run: yarn publish
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
