@@ -3,9 +3,9 @@
 .modal-global-search {
   transform: none;
 
-  &.fade {
+  &.modal.fade {
     .modal-dialog {
-      transform: $modal-show-transform;
+      transform: none;
     }
   }
 
@@ -13,7 +13,7 @@
     @each $breakpoint in map-keys($grid-breakpoints) {
       $next: breakpoint-next($breakpoint, $grid-breakpoints);
       $infix: breakpoint-infix($next, $grid-breakpoints);
-  
+
       &#{$infix} {
         @include media-breakpoint-down($breakpoint) {
           max-width: none;
@@ -52,6 +52,27 @@
     &.navbar{
       background: transparent;
       padding: $navbar-padding-y 0;
+
+      &.navbar-dark {
+        .form-control {
+          color: $navbar-dark-color;
+        }
+      }
+
+      &.navbar-light {
+        .form-control {
+          color: $navbar-light-color;
+        }
+      }
+
+      .form-control {
+        background: none;
+        border: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
     }
   }
 
