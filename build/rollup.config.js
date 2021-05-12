@@ -1,13 +1,13 @@
-'use strict';
-
 const path = require('path');
-const {babel} = require('@rollup/plugin-babel');
-const {nodeResolve} = require('@rollup/plugin-node-resolve');
+const { babel } = require('@rollup/plugin-babel');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const replace = require('@rollup/plugin-replace');
 
 const BUNDLE = process.env.BUNDLE === 'true';
+const ESM = process.env.ESM === 'true';
 
-let fileDestination = 'main.js';
-const external = ['jquery', 'lodash', 'popper.js'];
+let fileDestination = `main${ESM ? '.esm' : ''}`;
+const external = ['lodash', '@popperjs/core'];
 const plugins = [
   babel({
     // Only transpile our source code
@@ -17,27 +17,37 @@ const plugins = [
   })
 ];
 const globals = {
-  jquery: 'jQuery', // Ensure we use jQuery which is always available even in noConflict mode
   lodash: '_',
-  'popper.js': 'Popper'
+  '@popperjs/core': 'Popper'
 };
 
 if (BUNDLE) {
-  fileDestination = 'main.bundle.js';
+  fileDestination += '.bundle';
   // Remove last entry in external array to bundle Popper
   external.pop();
-  delete globals['popper.js'];
-  plugins.push(nodeResolve());
+  delete globals['@popperjs/core'];
+  plugins.push(
+    replace({
+      'process.env.NODE_ENV': '"production"',
+      preventAssignment: true
+    }),
+    nodeResolve()
+  );
 }
 
-module.exports = {
-  input: path.resolve(__dirname, '../js/index.js'),
+const rollupConfig = {
+  input: path.resolve(__dirname, `../js/index.${ESM ? 'esm' : 'umd'}.js`),
   output: {
-    file: path.resolve(__dirname, `../dist/js/${fileDestination}`),
-    format: 'umd',
-    globals,
-    name: 'main'
+    file: path.resolve(__dirname, `../dist/js/${fileDestination}.js`),
+    format: ESM ? 'esm' : 'umd',
+    globals
   },
   external,
   plugins
 };
+
+if (!ESM) {
+  rollupConfig.output.name = 'main';
+}
+
+module.exports = rollupConfig;
