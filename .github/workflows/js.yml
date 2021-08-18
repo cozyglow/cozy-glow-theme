@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [10, 12, 14, 16]
+        node: [12, 14, 16]
 
     steps:
       - name: Clone repository
@@ -36,10 +36,3 @@ jobs:
 
       - name: Run JS tests
         run: yarn run js-test
-
-      - name: Run Coveralls
-        uses: coverallsapp/github-action@v1.1.2
-        if: matrix.node == 14
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-          path-to-lcov: "./js/coverage/lcov.info"
