@@ -101,7 +101,7 @@
     "sass": "^1.32.12",
     "shelljs": "^0.8.4",
     "stylelint": "^13.13.1",
-    "stylelint-config-twbs-bootstrap": "^2.2.0",
+    "stylelint-config-twbs-bootstrap": "^3.0.1",
     "terser": "5.1.0",
     "vnu-jar": "21.4.9"
   },
