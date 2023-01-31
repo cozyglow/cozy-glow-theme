@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    reviewers:
+      - SmolSoftBoi
+    labels:
+      - dependencies
+    versioning-strategy: increase
+    rebase-strategy: disabled
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
