@@ -95,7 +95,7 @@
     "pantone-css": "^0.1.5",
     "postcss": "^8.2.13",
     "postcss-cli": "^10.1.0",
-    "rollup": "^2.47.0",
+    "rollup": "^2.80.0",
     "rollup-plugin-istanbul": "^3.0.0",
     "rtlcss": "^3.1.2",
     "sass": "^1.32.12",
