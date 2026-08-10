@@ -4813,7 +4813,7 @@ var Stage = function ($) {
         $(document).off(Event.TOUCHMOVE);
       }
 
-      $(this._config.hiddenElements).addClass(ClassName.HIDDEN);
+      $($.find(this._config.hiddenElements)).addClass(ClassName.HIDDEN);
 
       $(this._element).removeClass(ClassName.STAGE_OPEN).css({
         '-webkit-transition': '',
@@ -4847,7 +4847,7 @@ var Stage = function ($) {
         });
       }
 
-      $(this._config.hiddenElements).removeClass(ClassName.HIDDEN);
+      $($.find(this._config.hiddenElements)).removeClass(ClassName.HIDDEN);
 
       $(window).one(Event.KEYDOWN, $.proxy(function (e) {
         e.which == 27 && this.close();
